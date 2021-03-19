@@ -1,25 +1,40 @@
 /* Small devices (landscape phones, 576px and up) */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 375px) {
+	.banner .img__side-bar {
+		width: 100%;
+	}
 	.banner .img__side-bar img {
 		display: none;
 	}
 
-	.banner .banner__content-box,
+	section {
+		padding: 20px;
+	}
+	section#preferences {
+		padding: 20px;
+		min-height: 100%;
+	}
+
+	section#banner .banner__content-box,
 	.sidebar {
 		width: 100%;
-		padding: 50px;
+		padding: 20px;
 	}
 
 	.logo-text {
 		position: absolute;
 		top: 40px;
-		left: 50px;
+		left: 20px;
 		font-size: 1.2em;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		background-color: #333;
 		color: #fff;
 		padding: 0 5px;
+	}
+
+	.toggle {
+		right: 20px;
 	}
 
 	.banner .banner__content-box h4 {
@@ -36,118 +51,14 @@
 		font-size: 0.975;
 		text-align: justify;
 	}
-
-	section {
-		margin: 0;
-	}
-
 	.banner .banner__content-box div {
-		padding-top: 100px;
+		padding-top: 10px;
 	}
 
 	.icon__social-media {
 		position: absolute;
-		left: 50px;
-		bottom: -30px;
-	}
-
-	.icon__social-media li {
-		margin-right: 15px;
-	}
-
-	.icon__social-media i {
-		font-size: 25px;
-		color: rgb(95, 95, 95);
-	}
-
-	.swiper-slide {
-		width: 250px;
-	}
-
-	.contact {
-		padding: 3em;
-	}
-
-	.contact .form__contact,
-	.contact .contact__box {
-		width: 400px;
-		padding: 0;
-		margin: 10px;
-	}
-
-	.contact .contact__box .box {
-		height: 120px;
-	}
-
-	.contact .form__contact .row,
-	.contact .contact__box .row {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		margin: 0;
-	}
-
-	.contact .form__contact .row .col-md-100,
-	.contact .contact__box .row .col-md-100,
-	.contact .form__contact .row .col-100 {
-		width: 100%;
-		margin-bottom: 10px;
-	}
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media screen and (max-width: 768px) {
-	.banner .img__side-bar img {
-		display: none;
-	}
-
-	.banner .banner__content-box,
-	.sidebar {
-		width: 100%;
-		padding: 50px;
-	}
-
-	.logo-text {
-		position: absolute;
-		top: 40px;
-		left: 50px;
-		font-size: 1.2em;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		background-color: #333;
-		color: #fff;
-		padding: 0 5px;
-	}
-
-	.banner .banner__content-box h4 {
-		font-size: 1.25em;
-	}
-	.banner .banner__content-box h4 span {
-		font-size: 1.5em;
-	}
-	.banner .banner__content-box h2 {
-		font-size: 2.8em;
-	}
-
-	p {
-		font-size: 0.975;
-		text-align: justify;
-	}
-
-	section {
-		margin: 0;
-	}
-
-	.banner .banner__content-box div {
-		padding-top: 100px;
-	}
-
-	.icon__social-media {
-		position: absolute;
-		left: 50px;
-		bottom: -30px;
+		left: 20px;
+		bottom: 70px;
 	}
 
 	.icon__social-media li {
@@ -163,14 +74,29 @@
 		width: 300px;
 	}
 
-	.contact {
-		padding: 3em;
+	.swiper-slide .card {
+		height: 380px;
 	}
 
+	.swiper-container-horizontal > .swiper-pagination-bullets,
+	.swiper-pagination-custom,
+	.swiper-pagination-fraction {
+		bottom: 20px;
+	}
+
+	.contact {
+		padding: 0;
+	}
+
+	.title.title-white {
+		padding: 20px;
+		margin-top: 50px;
+		height: 120px;
+	}
 	.contact .form__contact,
 	.contact .contact__box {
-		width: 450px;
-		padding: 0;
+		width: 100%;
+		padding: 20px;
 		margin: 10px;
 	}
 
